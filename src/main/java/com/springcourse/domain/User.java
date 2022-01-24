@@ -49,10 +49,10 @@ public class User implements Serializable {
 	//ID muda caso senha adicionado depois outros campos
 	private Role role;
 	
-	@OneToMany(mappedBy = "user") //aqui é onde faz o mapeamento como se fosse a chave estrangeira que eu fazia no SQL
+	@OneToMany(mappedBy = "owner") //aqui é onde faz o mapeamento como se fosse a chave estrangeira que eu fazia no SQL
 	private List<Request> requests = new ArrayList<Request>();
 	
-	@OneToMany(mappedBy = "user") //aqui é onde faz o mapeamento como se fosse a chave estrangeira que eu fazia no SQL
+	@OneToMany(mappedBy = "owner") //aqui é onde faz o mapeamento como se fosse a chave estrangeira que eu fazia no SQL
 	private List<RequestStage> stages = new ArrayList<RequestStage>();	
 
 }

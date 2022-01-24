@@ -59,8 +59,8 @@ public class Request implements Serializable{
 	private RequestState state;
 	
 	@ManyToOne //vários pedidos para 1 usuário
-	@JoinColumn(name = "user_id", nullable = false)//chave estrangeira do usuário.
-	private User user;
+	@JoinColumn(name = "owner_id", nullable = false)//chave estrangeira do usuário.
+	private User owner;
 	
 	@OneToMany(mappedBy = "request") //um pedido pode ter vários estágios.MAPPEDBY é para pegar como foi declarado na classe REQUESTSTAGE
 	private List<RequestStage> stages = new ArrayList<RequestStage>();
