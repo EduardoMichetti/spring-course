@@ -18,8 +18,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.hibernate.annotations.ManyToAny;
-
 import com.springcourse.domain.enums.RequestState;
 
 import lombok.AllArgsConstructor;
